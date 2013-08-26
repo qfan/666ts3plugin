@@ -1,0 +1,33 @@
+﻿Build started 8/25/2013 21:02:11 PM.
+     1>Project "Q:\Program Files\TeamSpeak 3 Client\pluginsdk\src\test_plugin.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\test_plugin.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\test_plugin.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I../include /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D TEST_PLUGIN_EXPORTS /D WINDOWS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /errorReport:prompt plugin.c
+         plugin.c
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_plugin.dll.embed.manifest.res" Debug\test_plugin_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\plugins\test_plugin.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_plugin.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Q:\Program Files\TeamSpeak 3 Client\pluginsdk\bin\plugins\test_plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\bin\plugins\test_plugin.lib" /MACHINE:X64 /DLL Debug\test_plugin.dll.embed.manifest.res
+         Debug\plugin.obj
+            Creating library ..\bin\plugins\test_plugin.lib and object ..\bin\plugins\test_plugin.exp
+         test_plugin.vcxproj -> Q:\Program Files\TeamSpeak 3 Client\pluginsdk\src\..\bin\plugins\test_plugin.dll
+       Manifest:
+         Deleting file "Debug\test_plugin.dll.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\test_plugin.dll.embed.manifest" /manifest Debug\test_plugin.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\test_plugin.dll.embed.manifest.res" Debug\test_plugin_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\bin\plugins\test_plugin.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\test_plugin.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"Q:\Program Files\TeamSpeak 3 Client\pluginsdk\bin\plugins\test_plugin.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"..\bin\plugins\test_plugin.lib" /MACHINE:X64 /DLL Debug\test_plugin.dll.embed.manifest.res
+         Debug\plugin.obj
+            Creating library ..\bin\plugins\test_plugin.lib and object ..\bin\plugins\test_plugin.exp
+         test_plugin.vcxproj -> Q:\Program Files\TeamSpeak 3 Client\pluginsdk\src\..\bin\plugins\test_plugin.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\test_plugin.unsuccessfulbuild".
+         Touching "Debug\test_plugin.lastbuildstate".
+     1>Done Building Project "Q:\Program Files\TeamSpeak 3 Client\pluginsdk\src\test_plugin.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.31
