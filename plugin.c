@@ -137,8 +137,8 @@ int ts3plugin_init() {
 
 	printf("PLUGIN: App path: %s\nResources path: %s\nConfig path: %s\nPlugin path: %s\n", appPath, resourcesPath, configPath, pluginPath);
 
-	serverGroupNextStatus[GROUP_ID_RADIO_OPS] = GROUP_STATUS_DISABLE;
-	serverGroupNextStatus[GROUP_ID_SQUAD_LEADER] = GROUP_STATUS_DISABLE;
+	serverGroupNextStatus[GROUP_ID_RADIO_OPS] = GROUP_STATUS_ENABLE;
+	serverGroupNextStatus[GROUP_ID_SQUAD_LEADER] = GROUP_STATUS_ENABLE;
 
 	serverGroupIDs[GROUP_ID_RADIO_OPS] = GROUP_ID_UNKNOWN;
 	serverGroupIDs[GROUP_ID_SQUAD_LEADER] = GROUP_ID_UNKNOWN;
