@@ -6,9 +6,10 @@ Since planetside2 crashes almost everytime ALT+TAB is used when the ts3overlay i
 You can compile it yourself by 
   1. Install latest TS3 client
   2. Find the pluginsdk folder in your TS3 installation
-  3. Use Visual Studio to open (possibly also upgrade) the project file
-  4. Compile to x64 platform if you are using 64bit TS3.
-  5. Find the compiled "test_plugin.dll" file, rename it to 666.dll, and put it in TS3/plugins folder
+  3. Replace the plugin.c with the one you find here
+  4. Use Visual Studio to open (possibly also upgrade) the project file
+  5. Compile to x64 platform if you are using 64bit TS3
+  6. Find the compiled "test_plugin.dll" file, rename it to 666.dll, and put it in TS3/plugins folder
 
 Or, you can simply use the 666.dll (x64 version) pre-compiled.
 
