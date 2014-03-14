@@ -1,1 +1,2 @@
 cbccefaabbcff2caa3ea690e6bb46525 *666.dll
+36472f383e086f2b231a74493d84ccb2 *666_api20_x64.dll

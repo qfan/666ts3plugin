@@ -29,7 +29,7 @@ static struct TS3Functions ts3Functions;
 #define _strcpy(dest, destSize, src) { strncpy(dest, src, destSize-1); (dest)[destSize-1] = '\0'; }
 #endif
 
-#define PLUGIN_API_VERSION 19
+#define PLUGIN_API_VERSION 20
 
 #define PATH_BUFSIZE 512
 #define COMMAND_BUFSIZE 128
@@ -811,8 +811,8 @@ int str_ends_with(const char * str, const char * suffix) {
 void ts3plugin_onHotkeyEvent(const char* keyword) {
 	uint64 myDBID;
 	char *tmpNickname;
-	char name[512];
-	char name2[512];
+	char name[1024];
+	char name2[1024];
 	anyID myID;
 	
 
@@ -876,14 +876,19 @@ void ts3plugin_onHotkeyEvent(const char* keyword) {
 		if(str_ends_with(name, "  [L]")==1){
 			// should remove the [L]
 			printf("Should remove [L]\n");
-			strncpy(name2,name, strlen(name) -5);
+			if (strlen(name) >=1023 ) {
+				printf("WTF? your old name is longer than 1023 chars???");
+			}
+			strncpy(name2, name, strlen(name) -5);
+			name2[strlen(name) -5] = '\0'; //end of str
+			printf("New name is %s\n", name2);
 			ts3Functions.setClientSelfVariableAsString(myServerConnectionHandlerID, CLIENT_NICKNAME, name2);
 			ts3Functions.flushClientSelfUpdates(myServerConnectionHandlerID, NULL);//"Flusing for namechange");
 		} else {
 			// should add [L]
 			printf("Should add [L], ");
-			strcat(name,"  [L]");
-			printf(" new name is %s\n",name);
+			strcat(name, "  [L]");
+			printf(" new name is %s\n", name);
 			ts3Functions.setClientSelfVariableAsString(myServerConnectionHandlerID, CLIENT_NICKNAME, name);
 			ts3Functions.flushClientSelfUpdates(myServerConnectionHandlerID, NULL);//"Flusing for namechange");
 		}
